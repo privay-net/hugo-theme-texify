@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- author -->
   <meta name="author" content="{{ .Site.Author.name }}">
@@ -81,9 +80,6 @@
   {{ range .Site.Params.customJS }}
   <script src="{{ . | absURL }}"></script>
   {{ end }}
-
-  <!-- google analytics -->
-  {{ template "_internal/google_analytics_async.html" . }}
 
 </body>
 
